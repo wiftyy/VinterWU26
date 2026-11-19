@@ -1,1 +1,17 @@
-/* Här skrivs all din CSS */
+:root {
+    --primary-color: rgba (255, 91, 46, 1);
+
+}
+
+#container {
+
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+header {
+
+}
+
