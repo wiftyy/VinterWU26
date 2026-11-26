@@ -1,6 +1,6 @@
 :root {
     --primary-color: rgba(255, 91, 46, 1);
-
+    --box-color: rgb(255, 70, 40, 1);
 }
 
 * {
@@ -16,7 +16,7 @@ body {
 
 #container {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-rows: 80px 1fr 60px;
     grid-template-areas:
     'hd'
@@ -30,6 +30,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+    background-color: var(--box-color);
     border-bottom: 2px solid black;
 }
 
@@ -43,18 +44,40 @@ header nav a {
     color: black;
 }
 
+.img-logo {
+    height: 4em;
+    border-radius: 25%;
+}
+
 main {
     grid-area: mn;
     display: grid;
     padding: 20px;
     gap: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25vh 25vh 25vh;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
     's1 s1'
     's2 as'
     's3 as'
 }
+
+.s1 {
+    grid-area: s1;
+}
+
+.s2 {
+    grid-area: s2;
+}
+
+.s3 {
+    grid-area: s3;
+}
+
+aside {
+    grid-area: as;
+}
+
 
 footer {
     grid-area: ft;
